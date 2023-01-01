@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+  .field {
+    margin-bottom: 110px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 45px;
+    font-family: Arial;
+    color: rgb(104, 104, 104);
+    margin-left: 740px;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 2;
+    font-size: 65px;
+    margin-left: 740px;
+  }
+
+
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 50px;
+    width: 619px;
+    background-color: #00436dd2;
+    color: #ffff;
+    border: none;
+    margin-left: 820px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+</style>
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">JamShootGame</span> Company</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="current"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="icon" href="img/favicon.png"> 
+</head>
+<body>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe To Our Newsletter</h1>
+      <form>
+        <input type="email" placeholder="Enter Email..." required>
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+<form id="form">
+  <div class="field">
+    <label for="from_name">Full Name:</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="email_id">Email Address:</label>
+    <input type="text" name="email_id" id="email_id">
+  </div>
+  <div class="field">
+    <label for="message">Message:</label>
+    <input type="text" name="message" id="message">
+  </div>
+  <input type="submit" id="button" value="Send ">
+</form>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('2JaXsN89n4JUbMSHC')
+</script>
+<script src="script.js" type="text/javascript"></script>
+<footer>
+ <p>JamShootGame Company &copy; 2023</p> 
+</footer>
+</body>
+</html>
